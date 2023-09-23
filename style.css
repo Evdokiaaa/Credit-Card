@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+/* body {
+  height: 100vh;
+  display: flex;
+} */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__bg {
+  background: url("bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 850px;
+  width: 900px;
+  position: relative;
+}
+.card__front {
+  background: url("bg-card-front.png");
+  background-repeat: no-repeat;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  letter-spacing: 1.2px;
+  width: 450px;
+  height: 250px;
+  font-family: "Space Grotesk", sans-serif;
+  /* width: 28em;
+  height: 13em; */
+}
+@media screen and (min-width: 1240px) {
+  .card__front {
+    padding: 30px;
+    top: 185px;
+    left: 165px;
+  }
+  .card__back {
+    width: 450px;
+    height: 250px;
+    padding: 30px;
+    top: 465px;
+    left: 255px;
+  }
+  .card__back-cvc {
+    font-size: 18px;
+    margin-top: 80px;
+    padding-right: 25px;
+  }
+  .form__input {
+    margin-bottom: 40px;
+  }
+}
+.card__logo {
+  width: 85px;
+  margin-bottom: 55px;
+}
+.card__front-number {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.card__front-details {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+/*BACK*/
+.card__back {
+  background: url("bg-card-back.png");
+  background-repeat: no-repeat;
+  background-position: contain;
+  position: absolute;
+}
+.card__back-cvc {
+  text-align: right;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+}
+/*FORM*/
+.container__form {
+  padding: 40px 30px;
+}
+.form {
+  width: 340px;
+  margin-top: 90px;
+}
+.form__label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(278, 67%, 12%);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.form__input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: 1px solid rgb(203, 208, 223);
+  font-size: 16px;
+  font-weight: 550;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.form__input:focus {
+  border: 1px solid rgb(158, 155, 155);
+}
+.form__input::placeholder {
+  opacity: 0.25;
+}
+.form__expiration-cvc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 10px;
+}
+.form__expiration-cvc__data {
+  display: flex;
+  gap: 10px;
+}
+.form__confirm-button {
+  font-size: 18px;
+  width: 100%;
+  height: 45px;
+  background: hsl(278, 68%, 11%);
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.9px;
+}
+.form__confirm-button:hover {
+  opacity: 0.95;
+}
+.confirmation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.confirmation__img {
+  max-width: 30%;
+  margin-bottom: 20px;
+}
+.confirmation__message {
+  margin: 20px 0;
+}
+.confirmation__btn {
+  font-size: 18px;
+  width: 100%;
+  height: 45px;
+  background: hsl(278, 68%, 11%);
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.9px;
+}
+.hidden {
+  display: none;
+}
